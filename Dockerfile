@@ -33,6 +33,9 @@ COPY --chmod=755 app-manager/*.sh /app-manager/scripts/
 ARG CIVITAI_DOWNLOADER_VERSION
 RUN /install_civitai_model_downloader.sh
 
+# Clone and set up OmniGen in its own folder
+RUN /install_omnigen.sh
+
 # Cleanup installation scripts
 RUN rm -f /install_*.sh
 
