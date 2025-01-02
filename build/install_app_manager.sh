@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 set -e
 
-git clone https://github.com/ashleykleynhans/app-manager.git /app-manager
+# Clone the repository and switch to the dev branch
+git clone --branch dev https://github.com/SanWall/comfyui-and-omnigen-docker.git /app-manager
 cd /app-manager
-git checkout tags/${APP_MANAGER_VERSION}
+# git checkout tags/${APP_MANAGER_VERSION}
+
+# Install dependencies
 npm install
