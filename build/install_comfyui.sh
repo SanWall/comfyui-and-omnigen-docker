@@ -15,7 +15,7 @@ source venv/bin/activate
 /venv/bin/pip3 install --no-cache-dir xformers==${XFORMERS_VERSION} --index-url ${INDEX_URL}
 
 # Install requirements
-/venv/bin/  pip3 install -r requirements.txt
+/venv/bin/pip3 install -r requirements.txt
 /venv/bin/pip3 install accelerate
 
 # Install ComfyUI Custom Nodes
