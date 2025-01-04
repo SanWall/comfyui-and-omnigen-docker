@@ -19,7 +19,7 @@ deactivate
 echo "Starting OmniGen on port 4001"
 cd /OmniGen
 source /omnigen-venv/bin/activate
-/omnigen-venv/bin/python app.py --share --server_port=4001 > /workspace/logs/omnigen.log 2>&1 &
+omnigen-venv/bin/python app.py --share --server_port=4001 > /workspace/logs/omnigen.log 2>&1 &
 echo "OmniGen started on port 4001"
 echo "OmniGen log file: /workspace/logs/omnigen.log"
 deactivate

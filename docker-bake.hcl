@@ -3,7 +3,7 @@ variable "REGISTRY" {
 }
 
 variable "REGISTRY_USER" {
-    default = "ashleykza"
+    default = "sanwall"
 }
 
 variable "APP" {
@@ -19,11 +19,11 @@ variable "CU_VERSION" {
 }
 
 variable "BASE_IMAGE_REPOSITORY" {
-    default = "ashleykza/runpod-base"
+    default = "sanwall/runpod-base"
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "2.2.3"
+    default = "2.1.0"
 }
 
 variable "CUDA_VERSION" {
