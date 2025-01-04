@@ -85,12 +85,13 @@ docker run -d \
   -v /workspace \
   -p 2999:2999 \
   -p 3000:3001 \
+  -p 4000:4001 \
   -p 7777:7777 \
   -p 8000:8000 \
   -p 8888:8888 \
   -e JUPYTER_PASSWORD=Jup1t3R! \
   -e EXTRA_ARGS=--lowvram \
-  ashleykza/comfyui:latest
+  sanwall/comfyui-and-omnigen-docker:latest
 ```
 
 You can obviously substitute the image name and tag with your own.
