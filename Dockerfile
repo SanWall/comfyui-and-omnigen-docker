@@ -1,4 +1,5 @@
-ARG BASE_IMAGE
+# ARG BASE_IMAGE=sanwall/runpod-base:2.1.0-python3.11-cuda12.1.1-torch2.4.0
+ARG BASE_IMAGE=latest
 FROM ${BASE_IMAGE}
 
 # Add SDXL models and VAE
@@ -35,6 +36,7 @@ ARG APP_MANAGER_VERSION
 RUN /install_app_manager.sh
 COPY app-manager/config.json /app-manager/public/config.json
 COPY --chmod=755 app-manager/*.sh /app-manager/scripts/
+RUN /install_aitrepreneur_ultimate-flux.sh
 
 # Install CivitAI Model Downloader
 ARG CIVITAI_DOWNLOADER_VERSION

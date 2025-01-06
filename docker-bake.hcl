@@ -7,11 +7,11 @@ variable "REGISTRY_USER" {
 }
 
 variable "APP" {
-    default = "comfyui"
+    default = "comfyui_and_omnigen"
 }
 
 variable "RELEASE" {
-    default = "2.4.0"
+    default = "1.0.0"
 }
 
 variable "CU_VERSION" {
@@ -23,7 +23,7 @@ variable "BASE_IMAGE_REPOSITORY" {
 }
 
 variable "BASE_IMAGE_VERSION" {
-    default = "2.1.0"
+    default = "1.0.0"
 }
 
 variable "CUDA_VERSION" {
