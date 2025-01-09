@@ -15,6 +15,7 @@ deactivate
 cd /OmniGen
 source /omnigen-venv/bin/activate
 echo "OMNIGEN: Starting OmniGen on port 4001"
-omnigen-venv/bin/python app.py --share --server_port=4001 > /workspace/logs/omnigen.log 2>&1 &
+# omnigen-venv/bin/python app.py --share --server_port=4001 > /workspace/logs/omnigen.log 2>&1 &
+omnigen-venv/bin/python app.py --listen 0.0.0.0 --port 4001 > /workspace/logs/omnigen.log 2>&1 &
 echo "OMNIGEN: OmniGen Started"
 deactivate
